@@ -50,5 +50,32 @@ public class Main {
             }
             System.out.println();
         }
+
+        //inverted right angle triangle
+
+        int a = 5;
+
+        for(int row=1; row<=a; row++){
+
+            for(int col=1; col<=a-row+1; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // pyramid
+
+        int b = 5;
+
+        for(int row=1; row<=b; row++){
+
+            for(int col=1; col<=b-row; col++){
+                System.out.print("  ");
+            }
+            for(int col=1; col<=2*row-1; col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
